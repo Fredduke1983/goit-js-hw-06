@@ -13,7 +13,6 @@ const images = [
   },
 ];
 const galRef = document.querySelector(".gallery");
-// console.log(galRef);
 
 images.map(({ url, alt }) => {
   galRef.insertAdjacentHTML(
