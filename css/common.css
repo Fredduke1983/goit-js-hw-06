@@ -25,15 +25,18 @@ button {
 
 /* TASK-03 */
 .gallery {
-  display: grid;
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-right: 40px;
 }
 
 .imgStyle {
-  width: 50%;
+  width: 100%;
   border: 4mm ridge rgba(1, 219, 55, 0.582);
 }
 .liStyle {
+  width: 45%;
   list-style: none;
   margin: 10px;
 }

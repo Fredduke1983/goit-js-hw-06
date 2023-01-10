@@ -15,7 +15,7 @@ const images = [
 const galRef = document.querySelector(".gallery");
 // console.log(galRef);
 
-const markup = images.map(({ url, alt }) => {
+images.map(({ url, alt }) => {
   galRef.insertAdjacentHTML(
     "afterbegin",
     `<li class="liStyle"><img class="imgStyle" src="${url}" alt="${alt}"></li>`
