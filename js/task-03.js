@@ -14,9 +14,13 @@ const images = [
 ];
 const galRef = document.querySelector(".gallery");
 
-images.map(({ url, alt }) => {
-  galRef.insertAdjacentHTML(
-    "afterbegin",
-    `<li class="liStyle"><img class="imgStyle" src="${url}" alt="${alt}"></li>`
-  );
-});
+const createImgsEl = (imgs) => {
+  return imgs.map(({ url, alt }) => {
+    galRef.insertAdjacentHTML(
+      "afterbegin",
+      `<li class="liStyle"><img class="imgStyle" src="${url}" alt="${alt}"></li>`
+    );
+  });
+};
+
+createImgsEl(images);
