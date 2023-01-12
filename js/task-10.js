@@ -7,6 +7,7 @@ const boxesEl = document.querySelector('#boxes');
 const btnCreate = document.querySelector('[data-create]');
 const btnDestroy = document.querySelector('[data-destroy]');
 const elemsDiv = [];
+elemsDiv.length = inputNumEl.value;
 
 inputNumEl.addEventListener('change', e => {
   console.log(inputNumEl.value);
