@@ -2,7 +2,7 @@ const valInput = document.getElementById('validation-input');
 let countLength = 0;
 
 valInput.addEventListener('input', () => {
-  countLength = valInput.value.length;
+  countLength = valInput.value.trim().length;
 });
 
 valInput.addEventListener('blur', () => {
