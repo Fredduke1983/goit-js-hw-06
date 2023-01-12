@@ -14,7 +14,7 @@ inputNumEl.addEventListener('change', e => {
 
 btnCreate.addEventListener('click', e => {
   const createDivEl = document.createElement('div');
-  console.log('create');
+  console.log('create=');
 });
 btnDestroy.addEventListener('click', e => {
   console.log('destroy');
